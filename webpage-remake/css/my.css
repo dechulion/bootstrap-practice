@@ -17,13 +17,14 @@ h1, h2, h3, h6, a {
 h1, h2, h3 {
   font-family: QuicksandBook, Helvetica, sans-serif;
   font-weight: 100;
+  letter-spacing: .08em;
   text-transform: uppercase;
 }
 
 h6 {
   text-transform: uppercase;
-  font-weight: normal;
-  margin-bottom: 20px;
+  font-weight: 300;
+  margin-bottom: 5px;
 }
 
 a:hover {
@@ -46,20 +47,18 @@ a:hover {
 }
 
 .navbar-header {
- margin-top: 13px;
+ margin: 43px 0px 10px 0px;
+ float: left;
+ padding: 0px 15px 0px 15px;
 }
 
 .header-triangle {
   position: relative;
-  left: 20px;
-}
-.company {
-  margin: 30px 0px 10px 0px;
-  float: left;
+  left: -10px;
 }
 
-.list {
-  letter-spacing: 1px;
+.nav {
+  letter-spacing: .08em;
   font-weight: 200;
   margin-top: 30px;
   margin-bottom: 20px;
@@ -69,75 +68,83 @@ a:hover {
 
 .title {
   position: absolute;
-  left: 600px;
-  top: 120px;
+  left: 650px;
+  top: 110px;
+  padding: 0px 15px;
 }
 
-.col-md-8 {
-  float: left;
-  margin-top: 93px;
-  margin-left: 73px;
-}
-
-.pic {
+.col-md-9 {
   position: relative;
-  left: 20px;
+  margin-top: 93px;
+  margin-left:
+}
+
+.triangles {
+  position: relative;
+  left: 92px;
 }
 
 .bg-triangle {
   position: absolute;
-  left: -88px;
+  left: -15px;
   top: -142px;
-  width: 620px;
+  max-width: 620px;
+  min-width: 310px;
 }
 
-.col-md-4 {
+.intro {
   position: relative;
-  margin-top: 150px;
-  font-size: 1em;
+  margin-top: 145px;
   font-family: Georgia, "Times New Roman" serif;
-  font-size: 90%;
+  font-size: .9;
   max-width: 230px;
   padding-left: 0px;
-  float: right;
 }
 
-.two {
+.more-articles {
   border-top: 1px solid #fff;
-  margin-top: 30px;
-  padding-top: 10px;
+  margin-top: 20px;
 }
 
 .col-md-12 {
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 .col-md-3 {
   float: left;
 }
 
+.col-md-3 img {
+  width: 100%;
+}
+
 .col-md-3 p {
   border-bottom: 1px solid #ccc;
   padding: 15px 0px;
   margin-bottom: 0px;
-  font-size: 90%;
+  font-size: .9em;
+  letter-spacing: .07em;
 }
 
 .col-md-3 p:last-child {
   border-bottom: none;
 }
 
+.intro p {
+  border: none;
+}
+
 .footer {
   background-color: rgba(0, 0, 0, .2);
   margin-top: 10px;
-  padding: 10px 150px 5px 0px;
+  padding: 10px 15px 5px 15px;
   color: #fff;
 }
 
 .footer a {
   color: #807c72;
-  font-size: 90%;
+  font-size: .9em;
 }
 
 .clearfix:before, .clear-fix:after {
