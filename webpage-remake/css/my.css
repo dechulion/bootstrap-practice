@@ -6,6 +6,10 @@ body {
   background: url('../img/bg.jpg') repeat, darkgrey;
 }
 
+.container {
+  width: 1000px;
+}
+
 body p {
   color: white;
 }
@@ -27,13 +31,14 @@ h6 {
   margin-bottom: 5px;
 }
 
+.nav {
+  color: #b5c1ad;
+  padding-top: 10px;
+}
+
 a:hover {
   color: #fff;
   text-decoration: none;
-}
-
-.container {
-  width: 75%;
 }
 
 .collapse {
@@ -42,6 +47,7 @@ a:hover {
 
 .navbar-inverse {
   background-image: url('../img/bg-header.jpg');
+  opacity: .7;
   border-bottom: none;
   padding-bottom: 10px;
 }
@@ -52,58 +58,52 @@ a:hover {
  padding: 0px 15px 0px 15px;
 }
 
-.header-triangle {
-  position: relative;
-  left: -10px;
-}
-
 .nav {
   letter-spacing: .08em;
   font-weight: 200;
   margin-top: 30px;
-  margin-bottom: 20px;
   float: right;
   color: #fff;
 }
 
+.main {
+  position: relative;
+  background-image: url('../img/bg-triangle.png');
+  background-repeat: no-repeat;
+  background-size: 630px;
+}
+
 .title {
   position: absolute;
-  left: 650px;
-  top: 110px;
+  left: 500px;
+  top: 90px;
   padding: 0px 15px;
 }
 
-.col-md-9 {
+.bike-triangles {
   position: relative;
-  margin-top: 93px;
-  margin-left:
+  margin-top: 144px;
 }
 
-.triangles {
+.bikes {
+  width: 585px;
+  left: 110px;
   position: relative;
-  left: 92px;
-}
-
-.bg-triangle {
-  position: absolute;
-  left: -15px;
-  top: -142px;
-  max-width: 620px;
-  min-width: 310px;
 }
 
 .intro {
-  position: relative;
-  margin-top: 145px;
+  margin-top: 197px;
   font-family: Georgia, "Times New Roman" serif;
-  font-size: .9;
-  max-width: 230px;
-  padding-left: 0px;
+  font-size: .9em;
+}
+
+.intro p {
+  margin-top: 20px;
 }
 
 .more-articles {
   border-top: 1px solid #fff;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .col-md-12 {
@@ -111,15 +111,15 @@ a:hover {
   padding-bottom: 5px;
 }
 
-.col-md-3 {
+.articles {
   float: left;
 }
 
-.col-md-3 img {
+.articles img {
   width: 100%;
 }
 
-.col-md-3 p {
+.articles p {
   border-bottom: 1px solid #ccc;
   padding: 15px 0px;
   margin-bottom: 0px;
@@ -127,7 +127,7 @@ a:hover {
   letter-spacing: .07em;
 }
 
-.col-md-3 p:last-child {
+.articles p:last-child {
   border-bottom: none;
 }
 
@@ -158,6 +158,181 @@ a:hover {
 
 .clearfix {
   *zoom: 1;
+}
+
+
+
+/*@media screen and (max-width: 1000px) {
+ .body {
+  position: relative;
+  background-image: url('../img/bg-triangle.png');
+  background-repeat: no-repeat;
+  background-size: 66%;
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  padding: 0px 15px;
+}
+
+.bike-triangles {
+  position: relative;
+  margin-top: 145px;
+}
+
+.bikes {
+  width: 85%;
+  left: 111px;
+  position: relative;
+}
+}
+*/
+@media screen and (max-width: 992px) {
+ .main {
+  position: relative;
+  background-image: url('../img/bg-triangle.png');
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+.title {
+  position: absolute;
+  left: 390px;
+  top: 90px;
+  padding: 0px 0px;
+  font-size: 2.15em;
+}
+
+.bike-triangles {
+  position: relative;
+  margin-top: 133px;
+}
+
+.bikes {
+  width: 78%;
+  left: 100px;
+  position: relative;
+}
+
+.intro {
+  margin-top: 100px;
+  padding-top: 20px;
+  border-top: solid 1px #fff;
+}
+
+.articles {
+  width: 25%;
+}
+}
+
+@media screen and (max-width: 768px) {
+
+.container {
+  width: 700px;
+}
+
+.navbar-header {
+  margin-top: 34px;
+  margin-bottom: 20px;
+}
+
+.main {
+  position: relative;
+  background-image: url('../img/bg-triangle.png');
+  background-repeat: no-repeat;
+  background-size: 600px;
+}
+
+.title {
+  position: absolute;
+  left: 420px;
+  top: 60px;
+  padding: 0px 0px;
+  font-size: 2em;
+}
+
+.bike-triangles {
+  position: relative;
+  margin-top: 135px;
+}
+
+.bikes {
+  width: 560px;
+  left: 102px;
+  position: relative;
+}
+
+.intro {
+  margin-top: 100px;
+  padding-top: 20px;
+  border-top: solid 1px #fff;
+}
+
+.articles {
+  width: 25%;
+}
+
+
+
+
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+  width: 350px;
+}
+
+.navbar-header {
+  margin-top: 20px;
+}
+
+.nav {
+  padding-top: 0;
+  margin-top: 5px;
+  font-size: .9em;
+  float: left;
+}
+
+.main {
+  position: relative;
+  background-image: url('../img/bg-triangle.png');
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: 0 24%;
+}
+
+.title {
+  position: absolute;
+  left: 14px;
+  top: 50px;
+  padding: 0px 0px;
+  font-size: 1.7em;
+}
+
+.bike-triangles {
+  position: relative;
+  margin-top: 170px;
+}
+
+.bikes {
+  width: 278px;
+  left: 45px;
+  position: relative;
+}
+
+.intro {
+  margin-top: 75px;
+  padding-top: 20px;
+  border-top: solid 1px #fff;
+}
+
+.articles {
+  width: 100%;
+  float: left;
+}
+
 }
 
 
